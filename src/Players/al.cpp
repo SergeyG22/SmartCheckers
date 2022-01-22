@@ -1,4 +1,4 @@
-#include "al.h"
+#include "../../include/al.h"
 
 std::vector<Figure*> Al::getFigures() {
 	return black_pawn;

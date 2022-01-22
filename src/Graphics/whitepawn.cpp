@@ -1,7 +1,7 @@
-#include "whitepawn.h"
+#include "../../include/whitepawn.h"
 
 WhitePawn::WhitePawn(sf::Vector2f position):pos(position) {
-	if (!texture.loadFromFile("images/white_pawn.png")) {
+	if (!texture.loadFromFile("../resource/images/white_pawn.png")) {
 		std::cout << "file upload error";
 	}
 	sprite.setTexture(texture);

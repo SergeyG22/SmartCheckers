@@ -4,15 +4,16 @@
 #include <vector>
 #include <set>
 #include <memory>
-#include "truthvaluefield.h"
-#include "cursor.h"
-#include "player.h"
-#include "al.h"
-#include "figure.h"
-#include "whitepawn.h"
-#include "blackpawn.h"
-#include "gameboard.h"
-#include "cheesboard.h"
+#include "../include/truthvaluefield.h"
+#include "../include/cursor.h"
+#include "../include/player.h"
+#include "../include/al.h"
+#include "../include/figure.h"
+#include "../include/whitepawn.h"
+#include "../include/blackpawn.h"
+#include "../include/gameboard.h"
+#include "../include/cheesboard.h"
+
 
 
 void initializingFlags(std::unique_ptr<Player>&player,std::unique_ptr<Al>&al, TruthValueField& truth_value_field) {           //инициализация абстрактного поля значениями true/false

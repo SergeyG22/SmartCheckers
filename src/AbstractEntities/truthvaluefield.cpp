@@ -1,4 +1,4 @@
-#include "truthvaluefield.h"
+#include "../../include/truthvaluefield.h"
 
 TruthValueField::TruthValueField() {
 

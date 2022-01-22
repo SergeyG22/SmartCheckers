@@ -1,7 +1,7 @@
-#include "cheesboard.h"
+#include "../../include/cheesboard.h"
 
 CheesBoard::CheesBoard() {
-	if (!texture.loadFromFile("images/chessboard.png")) {
+	if (!texture.loadFromFile("../resource/images/chessboard.png")) {
 		std::cout << "file upload error";
 	}
 	sprite.setTexture(texture);

@@ -1,4 +1,4 @@
-#include "cursor.h"
+#include "../../include/cursor.h"
 
 Cursor::Cursor() {
 	rectangle.setSize(sf::Vector2f(75, 75));

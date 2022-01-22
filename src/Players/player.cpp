@@ -1,4 +1,4 @@
-#include "player.h"
+#include "../../include/player.h"
 
 std::vector<Figure*> Player::getFigures() {
 	return white_pawn;

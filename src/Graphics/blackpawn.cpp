@@ -1,7 +1,7 @@
-#include "blackpawn.h"
+#include "../../include/blackpawn.h"
 
 BlackPawn::BlackPawn(sf::Vector2f position) :pos{position} {
-	if (!texture.loadFromFile("images/black_pawn.png")) {
+	if (!texture.loadFromFile("../resource/images/black_pawn.png")) {
 		std::cout << "file upload error";
 	}
 	sprite.setTexture(texture);
