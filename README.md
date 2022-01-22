@@ -37,4 +37,5 @@ cmake ..
 
 ### Preview
  
-```
+![hippo](https://github.com/SergeyG22/SmartCheckers/blob/master/docs/animation/animation.gif)
+
