@@ -2,7 +2,8 @@
 
 Сheckers game with artificial intelligence elements.
 The players take turns.
-The first one who collects a row of nine pieces in the opponent's position wins.
+The first one who collects a row of nine pieces in the opponent's position wins.<br><br>
+[![CMake](https://github.com/SergeyG22/SmartCheckers/actions/workflows/cmake.yml/badge.svg)](https://github.com/SergeyG22/SmartCheckers/actions/workflows/cmake.yml)
 
 ### Rules of the game
 
