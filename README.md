@@ -24,10 +24,10 @@ cmake ..
 ### Keyboard control
 
 ```
- W - move up
- S - move down
- A - move left
- D - move right
+ [W] - move up
+ [S] - move down
+ [A] - move left
+ [D] - move right
 ```
 
 ### Mouse control
