@@ -39,7 +39,7 @@ set_target_properties(
      ${PROJECT_NAME} PROPERTIES
      CXX_STANDARD 14
      CXX_STANDARD_REQUIRED ON
-     CXX_EXTENSIONS
+     CXX_EXTENSIONS NO
 )
 
 target_link_libraries(${PROJECT_NAME}
