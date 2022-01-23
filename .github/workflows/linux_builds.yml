@@ -18,8 +18,6 @@ jobs:
     - name: Linux dependencies
       shell: bash
       run: |
-          sudo rm -f /etc/apt/sources.list.d/*
-          sudo cp -f misc/ci/sources.list /etc/apt/sources.list
           sudo apt-get update
           sudo apt-get install build-essential pkg-config libx11-dev libxcursor-dev \
           libxinerama-dev libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev \
