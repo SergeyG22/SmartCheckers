@@ -12,22 +12,22 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(SFML)
 
-if(UNIX AND NOT APPLE AND NOT ANDROID)
-    if (NOT CMAKE_BUILD_TYPE STREQUAL "Debug")
-        # https://github.com/monero-project/monero-gui/issues/3142#issuecomment-705940446
-        set(CMAKE_SKIP_RPATH ON)
-    endif()
-    find_package(X11 REQUIRED)
-    message(STATUS "X11_FOUND = ${X11_FOUND}")
-    message(STATUS "X11_INCLUDE_DIR = ${X11_INCLUDE_DIR}")
-    message(STATUS "X11_LIBRARIES = ${X11_LIBRARIES}")
-    include_directories(${X11_INCLUDE_DIR})
-    link_directories(${X11_LIBRARIES})
-    if(STATIC)
-        find_library(XCB_LIBRARY xcb)
-        message(STATUS "Found xcb library: ${XCB_LIBRARY}")
-    endif()
-endif()
+#if(UNIX AND NOT APPLE AND NOT ANDROID)
+#    if (NOT CMAKE_BUILD_TYPE STREQUAL "Debug")
+#        # https://github.com/monero-project/monero-gui/issues/3142#issuecomment-705940446
+#        set(CMAKE_SKIP_RPATH ON)
+#    endif()
+#    find_package(X11 REQUIRED)
+#    message(STATUS "X11_FOUND = ${X11_FOUND}")
+#    message(STATUS "X11_INCLUDE_DIR = ${X11_INCLUDE_DIR}")
+#    message(STATUS "X11_LIBRARIES = ${X11_LIBRARIES}")
+#    include_directories(${X11_INCLUDE_DIR})
+#    link_directories(${X11_LIBRARIES})
+#    if(STATIC)
+#        find_library(XCB_LIBRARY xcb)
+#        message(STATUS "Found xcb library: ${XCB_LIBRARY}")
+#    endif()
+#endif()
 
 
 add_executable(${PROJECT_NAME} 
