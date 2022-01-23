@@ -153,10 +153,10 @@ int main()
     Cursor cursor;
     TruthValueField field_value;
 
-    std::unique_ptr<GameBoard>cheesboard = std::make_unique<CheesBoard>();
+    auto cheesboard = std::unique_ptr<CheesBoard>();
     auto player = std::make_unique<Player>();
     auto al = std::make_unique<Al>();
-  
+
     initializingFlags(player,al,field_value);
     const int NUMBER_OF_SHAPES = 8;
     int shape = 0;
