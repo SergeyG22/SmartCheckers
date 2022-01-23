@@ -20,8 +20,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Install xmllint
-      run: sudo apt-get install -y libxml2-utils
+    - name: Linux dependencies
+      shell: bash
+      run: |
+          # Azure repositories are not reliable, we need to prevent azure giving us packages. 
+          sudo rm -f /etc/apt/sources.list.d/*
+          sudo cp -f misc/ci/sources.list /etc/apt/sources.list
+          sudo apt-get update
+          # The actual dependencies
+          sudo apt-get install build-essential pkg-config libx11-dev libxcursor-dev \
+          libxinerama-dev libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev \
+          libdbus-1-dev libudev-dev libxi-dev libxrandr-dev yasm xvfb wget unzip
+
         
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
