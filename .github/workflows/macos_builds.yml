@@ -1,4 +1,4 @@
-name: 🍎 macOS
+name:CI - macOS
 
 on:
   push:
